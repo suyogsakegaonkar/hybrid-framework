@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<pageData xmlns="http://www.example.org/DataSet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.example.org/DataSet ../src/test/resources/xsd/DataSet.xsd ">
+
+	<loginDetails id="facebook">
+		<username>suyogsakegaonkar@facebook.com</username>
+		<password>testfacebook</password>
+	</loginDetails>
+	<loginDetails id="gmail">
+		<username>suyogsakegaonkar@gmail.com</username>
+		<password>testgmail</password>
+	</loginDetails>
+
+	<comments id="comment_1">
+		<statement>Suyog is a Automation Engineer.</statement>
+	</comments>
+
+</pageData>

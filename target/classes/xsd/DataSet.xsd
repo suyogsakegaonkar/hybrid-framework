@@ -1,0 +1,27 @@
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/DataSet" xmlns:tns="http://www.example.org/DataSet" elementFormDefault="qualified">
+
+	<element name="pageData">
+		<complexType>
+			<sequence>
+				<element name="loginDetails" type="tns:loginDetails" maxOccurs="unbounded" minOccurs="0" />
+				<element name="comments" type="tns:comments" maxOccurs="unbounded" minOccurs="0"/>
+			</sequence>
+		</complexType>
+	</element>
+
+	<complexType name="loginDetails">
+		<sequence>
+			<element name="username" type="string" />
+			<element name="password" type="string" />
+		</sequence>
+		<attribute name="id" type="ID"></attribute>
+	</complexType>
+
+	<complexType name="comments">
+		<sequence>
+			<element name="statement" type="string" />
+		</sequence>
+		<attribute name="id" type="ID"></attribute>
+	</complexType>
+
+</schema>
